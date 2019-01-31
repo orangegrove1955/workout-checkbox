@@ -1,5 +1,10 @@
+body{
+    margin: 0;
+}
 header {
     background-color: greenyellow;
+    height: 10vh;
+    text-align: center;
 }
 table{
     margin: auto;
