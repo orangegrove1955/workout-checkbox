@@ -1,0 +1,59 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple fitness</title>
+</head>
+
+<body>
+    <header>
+        <div id="logo">
+            Simple Fitness
+        </div>
+        <!--
+        <nav>
+            <ul>
+                <li>Individual</li>
+                <li>List</li>
+                <li>Today</li>
+            </ul>
+        </nav>
+        -->
+    </header>
+    <div id="main"> 
+        <table id="all">
+            <thead id="head"></thead>
+            <tbody></tbody>
+        </table>
+        <div class="buttons">
+            <button id="add">Add more</button>
+            <button id="clear">Clear all</button>
+        </div>
+    </div>
+
+    <div id="entry" class="not-visible">
+        <div class="modal">
+            <div id='inputs'>
+                <div class="input-row">
+                    <label for="exercise">Exercise</label>
+                    <input type="text" id="exercise">
+                </div>
+                <div class='set'>
+                    <div class="input-row">
+                        <label for="set1">Set 1</label>
+                        <input type="text" id="set1">
+                    </div>
+                </div>
+            </div>
+            <button id="new-set">+ Add another set</button>
+            <div class="button-row">
+                <button id="cancel">Cancel</button>
+                <button id="enter">Enter</button>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="background.js"></script>
+
+</html>

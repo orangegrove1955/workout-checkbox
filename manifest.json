@@ -1,0 +1,17 @@
+{
+    "name": "Simple Fitness",
+    "version": "1.0",
+    "description": "Simple tracker for fitness based goals",
+    "chrome_url_overrides": {
+        "newtab": "exercise-list.html"
+    },
+    "permissions": [
+        "tabs",
+        "storage"
+    ],
+    "background": {
+        "scripts": ["background.js"],
+        "persistent": false
+    },
+    "manifest_version": 2
+}
