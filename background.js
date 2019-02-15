@@ -101,7 +101,7 @@ function loadElements() {
 
 /** Add a new set line for inputs */
 function addSet() {
-  let count = document.getElementsByClassName('set').length + 1;
+  let count = document.getElementsByClassName('input-row').length;
   let newSet = document.createElement('div');
   newSet.className = 'set';
   newSet.innerHTML = `
@@ -139,14 +139,16 @@ function clear() {
 /** Reset entry layout */
 function resetEntry() {
   document.getElementById('inputs').innerHTML =
-    `<div class="input-row">
-    <label for="exercise">Exercise</label>
-    <input type="text" id="exercise">
+  `<div class="input-row">
+    <label for="set1">Set 1</label>
+    <input type="text" id="set1">
   </div>
-  <div class='set'>
-    <div class="input-row">
-      <label for="set1">Set 1</label>
-      <input type="text" id="set1">
-    </div>
+  <div class="input-row">
+    <label for="set2">Set 2</label>
+    <input type="text" id="set2">
+  </div>
+  <div class="input-row">
+    <label for="set3">Set 3</label>
+    <input type="text" id="set3">
   </div>`;
 }
